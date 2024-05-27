@@ -1,7 +1,15 @@
 import React from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { routes } from "./pages";
+
+const router = createBrowserRouter(routes);
 
 function App() {
-	return <div className='w-10 h-10 bg-black'></div>;
+	return (
+		<>
+			<RouterProvider router={router} />
+		</>
+	);
 }
 
 export default App;
